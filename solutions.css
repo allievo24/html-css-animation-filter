@@ -99,8 +99,24 @@
 
 .ex-11-icon{
   
-    animation:gira 1s infinite ;
+    animation: gira2 1s ease infinite;
+    
  }
-@keyframes{
+@keyframes gira2{
+    0%{transform: rotate(0deg); }
+    20%{transform: rotate(300deg); }
+    50%{transform: rotate(300deg); }
+    70%{transform: rotate(-0deg); }
+    
+}
+
+.ex-12-button:hover .ex-12-top-white {
+    animation: move 3s linear ;
+}
+@keyframes move {
+
+    0%{ right: 10%; }
+    50%{left:90%; }
+    
     
 }
