@@ -83,10 +83,24 @@
 
 .ex-10-icon{
   
-   animation: gira 1s linear infinite;
+   animation:gira 1s infinite ;
 }
 
 
-@keyframes  {
+@keyframes gira{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(-360deg);}
+   /* 40%{transform: rotate(40deg);}
+    60%{transform: rotate(60deg);}
+    80%{transform: rotate(80deg);}
+    100%{transform: rotate(100deg);}*/
+}
+
+
+.ex-11-icon{
   
+    animation:gira 1s infinite ;
+ }
+@keyframes{
+    
 }
