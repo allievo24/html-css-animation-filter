@@ -54,12 +54,13 @@
 }
 
 .ex-7-img {
-    transition:  2S ;
+    transition: all  2S ;
    
     
 }
 .ex-7-img:hover {
      filter: sepia(100%);
+     filter: grayscale(70%)
 }
 
 .ex-8-img {
@@ -72,7 +73,7 @@
 }
 
 .ex-9-img {
-    transition: all border-radius  10s;
+    transition: all   10s;
 }
 .ex-9-img:hover {
     filter: sepia(70%);
@@ -81,11 +82,11 @@
     transform: scale(150%);
 }
 
+
 .ex-10-icon{
   
-   animation:gira 1s infinite ;
+   animation:gira 1s linear infinite ;
 }
-
 
 @keyframes gira{
     from{transform: rotate(0deg);}
@@ -97,11 +98,12 @@
 }
 
 
-.ex-11-icon{
+.ex-11-icon:hover{
   
-    animation: gira2 1s ease infinite;
+    animation: gira2 1s linear ;
     
  }
+
 @keyframes gira2{
     0%{transform: rotate(0deg); }
     20%{transform: rotate(300deg); }
@@ -113,10 +115,20 @@
 .ex-12-button:hover .ex-12-top-white {
     animation: move 3s linear ;
 }
+
+.ex-12-button:hover .ex-12-button-white {
+    animation: move2 3s linear ;
+}
+
 @keyframes move {
 
-    0%{ right: 10%; }
-    50%{left:90%; }
-    
-    
+    50%{left:90%; }   
 }
+
+@keyframes move2 {
+
+    50%{right:90%; }   
+}
+
+
+
